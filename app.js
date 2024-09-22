@@ -19,4 +19,8 @@ const server = http.createServer((req, res) => {
     res.end(f);
 });
 
+// Hard Coded Secret Key
+const secret_key = '123456'
+console.log(`my secret password is ${secret_key}`)
+
 server.listen(port, hostname, () => { });
